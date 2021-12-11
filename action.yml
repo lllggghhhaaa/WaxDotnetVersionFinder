@@ -1,0 +1,13 @@
+name: WaxDotnetVersionFinder
+description: 'Get the version of dotnet project'
+inputs:
+  path:
+    description: 'Path of csproj'
+    required: true
+outputs:
+  version:
+    description: 'Version of the csproj'
+
+runs:
+  using: node16
+  main: index.js
